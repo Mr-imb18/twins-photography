@@ -1,0 +1,77 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+/* 
+body {
+    background-color: black;
+    height: 100vh;
+} */
+
+.main {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    cursor: pointer;
+    padding: 300px 0px 0px 0px;
+    gap: 80px;
+    margin: 100px 400px 0px 0px;
+}
+
+.icon {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    /* margin: 80px; */
+    transition: all 0.8s;
+}
+
+/* Animation pour Instagram (1ère icône) */
+.icon:hover:nth-child(1) {
+    background: #E1306C; /* Couleur rose pour Instagram */
+    box-shadow: 0 0 20px #E1306C; /* Ombre rose */
+}
+
+.icon:hover:nth-child(1) svg rect {
+    stroke-dashoffset: 0; /* Affiche progressivement le contour */
+    stroke: #E1306C; /* Couleur rose pour Instagram */
+}
+
+/* Animation pour Facebook (2ème icône) */
+.icon:hover:nth-child(2) {
+    background: #1877F2; /* Couleur bleue pour Facebook */
+    box-shadow: 0 0 20px #1877F2; /* Ombre bleue */
+}
+
+.icon:hover:nth-child(2) svg rect {
+    stroke-dashoffset: 0; /* Affiche progressivement le contour */
+    stroke: #1877F2; /* Couleur bleue pour Facebook */
+}
+
+/* Animation pour WhatsApp (3ème icône) */
+.icon:hover:nth-child(3) {
+    background: #25D366; /* Couleur verte pour WhatsApp */
+    box-shadow: 0 0 20px #25D366; /* Ombre verte */
+}
+
+.icon i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+svg rect {
+    stroke-dasharray: 960; /* Périmètre du carré */
+    stroke-dashoffset: 960; /* Cache complètement le contour au départ */
+    transition: stroke-dashoffset 0.8s; /* Animation fluide */
+}
+
+.icon:hover:nth-child(3) svg rect {
+    stroke-dashoffset: 0; /* Affiche progressivement le contour */
+    stroke: #25d366; /* Couleur verte pour WhatsApp */
+}
