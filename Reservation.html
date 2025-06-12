@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="reservation.php" enctype="multipart/form-data">
+
+            <h1>Fiche de reservation</h1>
+
+            <label for="nom"> Saisissez votre nom</label><br>
+            <input id="nom" name="nom" placeholder="Entrez votre nom"><br>
+
+            <label for="prenom">Saisissez votre prénom</label><br>
+            <input id="prenom" name="prenom" placeholder="Entrez votre prénom"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="entrez votre email">
+
+
+            <label for="numero">Entrez votre numéro de téléphone</label><br>
+            <input id="numero" name="numero" placeholder="Entrez votre numéro de téléphone"><br>
+
+            <label for="reservation">Choisissez une date de réservation</label><br>
+            <input id="datereservation" type="date" name="date_seance"><br>
+            
+            <label for="time"> heure</label>
+            <input type="time" name="heureReservation" placeholder="entrez votre heure de reservation">
+            
+
+            <label for="preference">Indiquez nous vos preferences</label><br>
+            <textarea name="preference" id="preference"></textarea><br>
+
+            <input type="submit" value="Envoyer la fiche de réservation">
+            <input type="reset" value="Réinitialiser le formulaire">
+        </form>
+</body>
+</html>

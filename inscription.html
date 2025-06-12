@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="inscription">
+        <h3>INSCRIPTION</h3>
+        <form action="inscription.php" method="post">
+        <div class="champs">
+            <div class="champs">
+                <label for="nom"> Saisissez votre nom</label><br>
+                <input id="nom" name="nom" placeholder="Entrez votre nom"><br>
+
+                <label for="prenom">Saisissez votre prénom</label><br>
+                <input id="prenom" name="prenom" placeholder="Entrez votre prénom"><br>
+                
+                <label for="numero">Entrez votre numéro de téléphone</label><br>
+                <input id="numero" name="numero" placeholder="Entrez votre numéro de téléphone"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="entrez votre email"><br>
+
+                <label for="password">Mot de passe</label><br>
+                <input type="password" name="Motdepasse" id="">
+
+                <input type="hidden" name="role" value="user || admin">
+                
+            </div>
+
+            
+
+        </div>
+        <button type="submit">S'inscrire</button>
+    </form>
+        
+        <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous</a></p>
+    </div>
+</body>
+
+</html>
